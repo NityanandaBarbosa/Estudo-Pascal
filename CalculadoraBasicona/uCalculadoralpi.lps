@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="uCalculadoralpi.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="16"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="calculadora.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="25"/>
+        <CursorPos X="63" Y="55"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="6" HistoryIndex="5">
+      <Position1>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="26" TopLine="26"/>
+      </Position1>
+      <Position2>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="50" Column="48" TopLine="22"/>
+      </Position2>
+      <Position3>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="34" Column="61" TopLine="20"/>
+      </Position3>
+      <Position4>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="28" Column="23" TopLine="8"/>
+      </Position4>
+      <Position5>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="49" Column="40" TopLine="25"/>
+      </Position5>
+      <Position6>
+        <Filename Value="calculadora.pas"/>
+        <Caret Line="43" Column="20" TopLine="25"/>
+      </Position6>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

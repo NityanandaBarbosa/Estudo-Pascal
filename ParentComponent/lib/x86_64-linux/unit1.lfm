@@ -1,0 +1,62 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 221
+  Height = 213
+  Top = 117
+  Width = 460
+  Caption = 'Tela principal'
+  ClientHeight = 213
+  ClientWidth = 460
+  DesignTimePPI = 84
+  object btnOK: TButton
+    Left = 352
+    Height = 30
+    Top = 48
+    Width = 66
+    Caption = 'OK'
+    TabOrder = 0
+  end
+  object edtMensagem: TEdit
+    Left = 40
+    Height = 29
+    Top = 48
+    Width = 304
+    TabOrder = 1
+    TextHint = 'Digite uma mensagem'
+  end
+  object Panel1: TPanel
+    Left = 32
+    Height = 72
+    Top = 88
+    Width = 400
+    Caption = 'Panel1'
+    ClientHeight = 72
+    ClientWidth = 400
+    Color = 16756736
+    ParentColor = False
+    TabOrder = 2
+    object Button2: TButton
+      Left = 320
+      Height = 29
+      Top = 16
+      Width = 66
+      Caption = 'Button2'
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 8
+      Height = 29
+      Top = 16
+      Width = 304
+      TabOrder = 1
+      Text = 'Edit2'
+    end
+    object chkPainel: TCheckBox
+      Left = 227
+      Height = 21
+      Top = 48
+      Width = 83
+      Caption = 'Escreveu ?'
+      TabOrder = 2
+    end
+  end
+end

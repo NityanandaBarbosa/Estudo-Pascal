@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 221
+  Height = 845
+  Top = 117
+  Width = 460
+  Caption = 'Form1'
+  ClientHeight = 845
+  ClientWidth = 460
+  DesignTimePPI = 84
+  LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 352
+    Height = 30
+    Top = 48
+    Width = 66
+    Caption = 'Button1'
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 29
+    Top = 48
+    Width = 304
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Panel1: TPanel
+    Left = 32
+    Height = 56
+    Top = 88
+    Width = 386
+    Caption = 'Panel1'
+    ClientHeight = 56
+    ClientWidth = 386
+    Color = 16756736
+    ParentColor = False
+    TabOrder = 2
+    object Button2: TButton
+      Left = 320
+      Height = 29
+      Top = 16
+      Width = 66
+      Caption = 'Button2'
+      TabOrder = 0
+    end
+    object Edit2: TEdit
+      Left = 8
+      Height = 29
+      Top = 16
+      Width = 304
+      TabOrder = 1
+      Text = 'Edit2'
+    end
+  end
+end

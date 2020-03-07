@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 251
+  Height = 210
+  Top = 250
+  Width = 280
+  Caption = 'Form1'
+  ClientHeight = 210
+  ClientWidth = 280
+  DesignTimePPI = 84
+  object Edit1: TEdit
+    Left = 19
+    Height = 23
+    Top = 16
+    Width = 80
+    TabOrder = 0
+    TextHint = 'Valor 1'
+  end
+  object btnSoma: TButton
+    Left = 16
+    Height = 22
+    Top = 104
+    Width = 66
+    Caption = 'Soma'
+    OnClick = btnSomaClick
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 22
+    Height = 23
+    Top = 56
+    Width = 77
+    NumbersOnly = True
+    TabOrder = 2
+    TextHint = 'Valor 2'
+  end
+  object Edit3: TEdit
+    Left = 96
+    Height = 23
+    Top = 160
+    Width = 96
+    ReadOnly = True
+    TabOrder = 3
+    TextHint = 'Resultado'
+  end
+  object btnSubt: TButton
+    Left = 104
+    Height = 22
+    Top = 104
+    Width = 66
+    Caption = 'Subtração'
+    OnClick = btnSubtClick
+    TabOrder = 4
+  end
+  object btnMultip: TButton
+    Left = 184
+    Height = 22
+    Top = 104
+    Width = 88
+    Caption = 'Multiplicação'
+    OnClick = btnMultipClick
+    TabOrder = 5
+  end
+  object Label1: TLabel
+    Left = 19
+    Height = 17
+    Top = 169
+    Width = 61
+    Caption = 'Resultado :'
+    ParentColor = False
+  end
+end

@@ -1,0 +1,27 @@
+object frmTela: TfrmTela
+  Left = 259
+  Height = 210
+  Top = 250
+  Width = 280
+  Caption = 'Tela Evento'
+  ClientHeight = 210
+  ClientWidth = 280
+  DesignTimePPI = 84
+  OnActivate = FormActivate
+  OnClick = FormClick
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDblClick = FormDblClick
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  object Button1: TButton
+    Left = 208
+    Height = 22
+    Top = 176
+    Width = 66
+    Caption = 'Fechar'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end
