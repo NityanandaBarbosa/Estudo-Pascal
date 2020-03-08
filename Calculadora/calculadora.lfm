@@ -1,0 +1,171 @@
+object Form1: TForm1
+  Left = 259
+  Height = 271
+  Top = 250
+  Width = 266
+  Caption = 'Form1'
+  ClientHeight = 271
+  ClientWidth = 266
+  DesignTimePPI = 84
+  object edtNumeros: TEdit
+    Left = 16
+    Height = 23
+    Top = 24
+    Width = 232
+    ReadOnly = True
+    TabOrder = 0
+    TextHint = 'Digite o numero pelo teclado :'
+  end
+  object btn1: TButton
+    Left = 16
+    Height = 32
+    Top = 96
+    Width = 48
+    Caption = '1'
+    TabOrder = 1
+  end
+  object btn2: TButton
+    Left = 80
+    Height = 32
+    Top = 96
+    Width = 48
+    Caption = '2'
+    TabOrder = 2
+  end
+  object btn3: TButton
+    Left = 144
+    Height = 32
+    Top = 96
+    Width = 48
+    Caption = '3'
+    TabOrder = 3
+  end
+  object btn4: TButton
+    Left = 16
+    Height = 32
+    Top = 136
+    Width = 48
+    Caption = '4'
+    TabOrder = 4
+  end
+  object btn5: TButton
+    Left = 80
+    Height = 32
+    Top = 136
+    Width = 48
+    Caption = '5'
+    TabOrder = 5
+  end
+  object btn6: TButton
+    Left = 144
+    Height = 32
+    Top = 136
+    Width = 48
+    Caption = '6'
+    TabOrder = 6
+  end
+  object btn7: TButton
+    Left = 16
+    Height = 32
+    Top = 176
+    Width = 48
+    Caption = '7'
+    TabOrder = 7
+  end
+  object btn8: TButton
+    Left = 80
+    Height = 32
+    Top = 176
+    Width = 48
+    Caption = '8'
+    TabOrder = 8
+  end
+  object btn9: TButton
+    Left = 144
+    Height = 32
+    Top = 176
+    Width = 48
+    Caption = '9'
+    TabOrder = 9
+  end
+  object btn0: TButton
+    Left = 16
+    Height = 32
+    Top = 216
+    Width = 112
+    Caption = '0'
+    TabOrder = 10
+  end
+  object btnPonto: TButton
+    Left = 144
+    Height = 32
+    Top = 216
+    Width = 48
+    Caption = '.'
+    TabOrder = 11
+  end
+  object btnClean: TButton
+    Left = 16
+    Height = 32
+    Top = 56
+    Width = 48
+    Caption = 'AC'
+    TabOrder = 12
+  end
+  object btnMultipl: TButton
+    Left = 144
+    Height = 32
+    Top = 56
+    Width = 48
+    Caption = 'X'
+    TabOrder = 13
+  end
+  object btnPorcent: TButton
+    Left = 80
+    Height = 32
+    Top = 56
+    Width = 48
+    Caption = '%'
+    TabOrder = 14
+  end
+  object btnSoma: TButton
+    Left = 208
+    Height = 32
+    Top = 136
+    Width = 40
+    Caption = '+'
+    TabOrder = 15
+  end
+  object btnSub: TButton
+    Left = 208
+    Height = 32
+    Top = 96
+    Width = 40
+    Caption = '-'
+    TabOrder = 16
+  end
+  object btnResult: TButton
+    Left = 208
+    Height = 80
+    Top = 176
+    Width = 40
+    Caption = '='
+    TabOrder = 17
+  end
+  object btnDiv: TButton
+    Left = 208
+    Height = 32
+    Top = 56
+    Width = 40
+    Caption = '/'
+    TabOrder = 18
+  end
+  object Label1: TLabel
+    Left = 64
+    Height = 17
+    Top = 0
+    Width = 144
+    Caption = 'Fucking Master Calculator'
+    ParentColor = False
+  end
+end
