@@ -44,9 +44,11 @@ type
     procedure btn9Click(Sender: TObject);
     procedure btnBackClick(Sender: TObject);
     procedure btnCleanClick(Sender: TObject);
+    procedure btnDivClick(Sender: TObject);
     procedure btnPontoClick(Sender: TObject);
     procedure btnResultClick(Sender: TObject);
     procedure btnSomaClick(Sender: TObject);
+    procedure btnSubClick(Sender: TObject);
   private
          var resultado, aux : Double;
              ultOperador : String;
@@ -137,14 +139,14 @@ begin
   for count := 1 to Length(stringAux) do
   begin
        if stringAux[count] = '.'  then
-       begin
-          ponto := False;
-          Break;
-       end
+         begin
+            ponto := False;
+            Break;
+         end
        else
-       begin
-           ponto := True
-       end;
+         begin
+             ponto := True
+         end;
   end;
   if ponto = True then
     edtNumeros.text := edtNumeros.text+'.';
@@ -154,16 +156,51 @@ procedure TForm1.btnResultClick(Sender: TObject);
 begin
   aux := resultado;
    if ultOperador = '+' then
-     btnSomaClick(btnSoma);
+     begin
+       btnSomaClick(btnSoma);
+       //aux := 0;
+     end
+   else if ultOperador = '-' then
+     Begin
+       btnSubClick(btnSub);
+       resultado := resultado*(-1);
+       //aux := 0;
+     end
+   else if ultOperador = '/' then
+     begin
+        btnDivClick(btnDiv);
+        //aux := 0
+     end;
    edtNumeros.Text := FloatToStr(resultado);
-
+   aux := 0
 end;
 
 procedure TForm1.btnSomaClick(Sender: TObject);
 begin
-  resultado := aux + StrToFloat(edtNumeros.Text);
+  resultado := StrToFloat(edtNumeros.Text) + aux;
   edtNumeros.Text := '';
   ultOperador := '+';
+end;
+
+procedure TForm1.btnSubClick(Sender: TObject);
+begin
+  resultado := StrToFloat(edtNumeros.Text) - aux;
+  edtNumeros.Text := '';
+  ultOperador := '-';
+end;
+
+procedure TForm1.btnDivClick(Sender: TObject);
+begin
+  if aux = 0 then
+    begin
+     resultado := StrToFloat(edtNumeros.Text);
+    end
+  else
+    begin
+      resultado := aux / StrToFloat(edtNumeros.Text) ;
+    end;
+  edtNumeros.Text := '';
+  ultOperador := '/';
 end;
 
 end.

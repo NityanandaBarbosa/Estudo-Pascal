@@ -157,6 +157,7 @@ object Form1: TForm1
     Top = 96
     Width = 40
     Caption = '-'
+    OnClick = btnSubClick
     TabOrder = 16
   end
   object btnResult: TButton
@@ -174,6 +175,7 @@ object Form1: TForm1
     Top = 56
     Width = 40
     Caption = '/'
+    OnClick = btnDivClick
     TabOrder = 18
   end
   object Label1: TLabel
