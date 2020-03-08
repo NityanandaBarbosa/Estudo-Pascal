@@ -12,6 +12,7 @@ object Form1: TForm1
     Height = 23
     Top = 24
     Width = 232
+    Color = clNone
     ReadOnly = True
     TabOrder = 0
     TextHint = 'Digite o numero pelo teclado :'
@@ -22,6 +23,7 @@ object Form1: TForm1
     Top = 96
     Width = 48
     Caption = '1'
+    OnClick = btn1Click
     TabOrder = 1
   end
   object btn2: TButton
@@ -30,6 +32,7 @@ object Form1: TForm1
     Top = 96
     Width = 48
     Caption = '2'
+    OnClick = btn2Click
     TabOrder = 2
   end
   object btn3: TButton
@@ -38,6 +41,7 @@ object Form1: TForm1
     Top = 96
     Width = 48
     Caption = '3'
+    OnClick = btn3Click
     TabOrder = 3
   end
   object btn4: TButton
@@ -46,6 +50,7 @@ object Form1: TForm1
     Top = 136
     Width = 48
     Caption = '4'
+    OnClick = btn4Click
     TabOrder = 4
   end
   object btn5: TButton
@@ -54,6 +59,7 @@ object Form1: TForm1
     Top = 136
     Width = 48
     Caption = '5'
+    OnClick = btn5Click
     TabOrder = 5
   end
   object btn6: TButton
@@ -62,6 +68,7 @@ object Form1: TForm1
     Top = 136
     Width = 48
     Caption = '6'
+    OnClick = btn6Click
     TabOrder = 6
   end
   object btn7: TButton
@@ -70,6 +77,7 @@ object Form1: TForm1
     Top = 176
     Width = 48
     Caption = '7'
+    OnClick = btn7Click
     TabOrder = 7
   end
   object btn8: TButton
@@ -78,6 +86,7 @@ object Form1: TForm1
     Top = 176
     Width = 48
     Caption = '8'
+    OnClick = btn8Click
     TabOrder = 8
   end
   object btn9: TButton
@@ -86,6 +95,7 @@ object Form1: TForm1
     Top = 176
     Width = 48
     Caption = '9'
+    OnClick = btn9Click
     TabOrder = 9
   end
   object btn0: TButton
@@ -94,6 +104,7 @@ object Form1: TForm1
     Top = 216
     Width = 112
     Caption = '0'
+    OnClick = btn0Click
     TabOrder = 10
   end
   object btnPonto: TButton
@@ -102,6 +113,7 @@ object Form1: TForm1
     Top = 216
     Width = 48
     Caption = '.'
+    OnClick = btnPontoClick
     TabOrder = 11
   end
   object btnClean: TButton
@@ -110,6 +122,7 @@ object Form1: TForm1
     Top = 56
     Width = 48
     Caption = 'AC'
+    OnClick = btnCleanClick
     TabOrder = 12
   end
   object btnMultipl: TButton
@@ -120,12 +133,13 @@ object Form1: TForm1
     Caption = 'X'
     TabOrder = 13
   end
-  object btnPorcent: TButton
+  object btnBack: TButton
     Left = 80
     Height = 32
     Top = 56
     Width = 48
-    Caption = '%'
+    Caption = 'BACK'
+    OnClick = btnBackClick
     TabOrder = 14
   end
   object btnSoma: TButton
@@ -134,6 +148,7 @@ object Form1: TForm1
     Top = 136
     Width = 40
     Caption = '+'
+    OnClick = btnSomaClick
     TabOrder = 15
   end
   object btnSub: TButton
@@ -146,10 +161,11 @@ object Form1: TForm1
   end
   object btnResult: TButton
     Left = 208
-    Height = 80
+    Height = 72
     Top = 176
     Width = 40
     Caption = '='
+    OnClick = btnResultClick
     TabOrder = 17
   end
   object btnDiv: TButton

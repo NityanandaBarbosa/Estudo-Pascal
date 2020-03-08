@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1540814642"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhibq &quot;-Fi/home/nityananda/Estudos Pascal/Calculadora/lib/x86_64-linux&quot; -Fu/usr/share/lazarus/2.0.6/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/2.0.6/lcl/units/x86_64-linux -Fu/usr/share/lazarus/2.0.6/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/2.0.6/packager/units/x86_64-linux &quot;-Fu/home/nityananda/Estudos Pascal/Calculadora/&quot; &quot;-FU/home/nityananda/Estudos Pascal/Calculadora/lib/x86_64-linux/&quot; &quot;-FE/home/nityananda/Estudos Pascal/Calculadora/&quot; &quot;-o/home/nityananda/Estudos Pascal/Calculadora/uCalculadora&quot; -dLCL -dLCLgtk2 uCalculadora.lpr"/>
+</CONFIG>
