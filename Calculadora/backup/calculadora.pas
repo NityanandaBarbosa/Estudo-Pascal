@@ -45,6 +45,7 @@ type
     procedure btnBackClick(Sender: TObject);
     procedure btnCleanClick(Sender: TObject);
     procedure btnDivClick(Sender: TObject);
+    procedure btnMultiplClick(Sender: TObject);
     procedure btnPontoClick(Sender: TObject);
     procedure btnResultClick(Sender: TObject);
     procedure btnSomaClick(Sender: TObject);
@@ -116,19 +117,6 @@ begin
   edtNumeros.text := edtNumeros.text+'9';
 end;
 
-procedure TForm1.btnBackClick(Sender: TObject);
-var stringAux : string;
-begin
-  stringAux := edtNumeros.Text;
-  Delete(stringAux,Length(stringAux),1);
-  edtNumeros.Text := stringAux;
-end;
-
-procedure TForm1.btnCleanClick(Sender: TObject);
-begin
-
-end;
-
 procedure TForm1.btnPontoClick(Sender: TObject);
 var
   stringAux : string;
@@ -150,29 +138,6 @@ begin
   end;
   if ponto = True then
     edtNumeros.text := edtNumeros.text+'.';
-end;
-
-procedure TForm1.btnResultClick(Sender: TObject);
-begin
-  aux := resultado;
-   if ultOperador = '+' then
-     begin
-       btnSomaClick(btnSoma);
-       //aux := 0;
-     end
-   else if ultOperador = '-' then
-     Begin
-       btnSubClick(btnSub);
-       resultado := resultado*(-1);
-       //aux := 0;
-     end
-   else if ultOperador = '/' then
-     begin
-        btnDivClick(btnDiv);
-        //aux := 0
-     end;
-   edtNumeros.Text := FloatToStr(resultado);
-   aux := 0
 end;
 
 procedure TForm1.btnSomaClick(Sender: TObject);
@@ -201,6 +166,58 @@ begin
     end;
   edtNumeros.Text := '';
   ultOperador := '/';
+end;
+
+procedure TForm1.btnMultiplClick(Sender: TObject);
+begin
+  if aux = 0 then
+    begin
+     resultado := StrToFloat(edtNumeros.Text);
+    end
+  else
+    begin
+      resultado := aux * StrToFloat(edtNumeros.Text) ;
+    end;
+  edtNumeros.Text := '';
+  ultOperador := 'x';
+end;
+
+procedure TForm1.btnResultClick(Sender: TObject);
+begin
+  aux := resultado;
+   if ultOperador = '+' then
+     begin
+       btnSomaClick(btnSoma);
+     end
+   else if ultOperador = '-' then
+     Begin
+       btnSubClick(btnSub);
+       resultado := resultado*(-1);
+     end
+   else if ultOperador = '/' then
+     begin
+        btnDivClick(btnDiv);
+     end
+   else
+     begin
+       btnMultiplClick(btnMultipl)
+     end;
+   edtNumeros.Text := FloatToStr(resultado);
+   aux := 0
+end;
+
+procedure TForm1.btnCleanClick(Sender: TObject);
+begin
+    resultado := 0; aux := 0;
+    edtNumeros.text := '';
+end;
+
+procedure TForm1.btnBackClick(Sender: TObject);
+var stringAux : string;
+begin
+  stringAux := edtNumeros.Text;
+  Delete(stringAux,Length(stringAux),1);
+  edtNumeros.Text := stringAux;
 end;
 
 end.

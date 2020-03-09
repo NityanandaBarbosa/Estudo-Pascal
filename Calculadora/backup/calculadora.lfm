@@ -131,6 +131,7 @@ object Form1: TForm1
     Top = 56
     Width = 48
     Caption = 'X'
+    OnClick = btnMultiplClick
     TabOrder = 13
   end
   object btnBack: TButton
